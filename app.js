@@ -17,49 +17,54 @@ if (a > 0 & b > 0) {
     alert('a = '+a+' и b = '+b+', оба разных знаков. Их сумма = '+c)
 };
 
+// Тут начинается 4 задание (запрашивается значение переменной, и выводится с помощью свитч рандомное значение от y до 15)
+
+y = +prompt("Введите число от 1 до 15");
+
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
+    min = y;
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум не включается, минимум включается
 };
 
-switch(getRandomInt(0, 15)) {
-    case 0: alert(getRandomInt(0, 15));
+switch(getRandomInt(y, 15)) {
+    case 0: alert(getRandomInt(y, 15));
         break;
-    case 1: alert(getRandomInt(0, 15));
+    case 1: alert(getRandomInt(y, 15));
         break;
-    case 1: alert(getRandomInt(0, 15));
+    case 2: alert(getRandomInt(y, 15));
         break;
-    case 2: alert(getRandomInt(0, 15));
+    case 3: alert(getRandomInt(y, 15));
         break;
-    case 3: alert(getRandomInt(0, 15));
+    case 4: alert(getRandomInt(y, 15));
         break;
-    case 4: alert(getRandomInt(0, 15));
+    case 5: alert(getRandomInt(y, 15));
         break;
-    case 5: alert(getRandomInt(0, 15));
+    case 6: alert(getRandomInt(y, 15));
         break;
-    case 6: alert(getRandomInt(0, 15));
+    case 7: alert(getRandomInt(y, 15));
         break;
-    case 7: alert(getRandomInt(0, 15));
+    case 8: alert(getRandomInt(y, 15));
         break;
-    case 8: alert(getRandomInt(0, 15));
+    case 9: alert(getRandomInt(y, 15));
         break;
-    case 9: alert(getRandomInt(0, 15));
+    case 10: alert(getRandomInt(y, 15));
         break;
-    case 10: alert(getRandomInt(0, 15));
+    case 11: alert(getRandomInt(y, 15));
         break;
-    case 11: alert(getRandomInt(0, 15));
+    case 12: alert(getRandomInt(y, 15));
         break;
-    case 12: alert(getRandomInt(0, 15));
+    case 13: alert(getRandomInt(y, 15));
         break;
-    case 13: alert(getRandomInt(0, 15));
+    case 14: alert(getRandomInt(y, 15));
         break;
-    case 14: alert(getRandomInt(0, 15));
-        break;
-    case 15: alert(getRandomInt(0, 15));
+    case 15: alert(getRandomInt(y, 15));
         break;
     default: alert('Что-то пошло не так')
 }
+
+
+// Тут начинается 6 задание 
 
 function mathOperation (number1, number2, operation) {
     number1 = +prompt('Введите первую переменную');
@@ -105,7 +110,10 @@ switch(mathOperation()) {
     case 4: alert(Chast(arg1, arg2))
         break;
     default: alert('Что-то пошло не так')
-}
+}  
+
+
+// Тут начинается 7 задание
 
 alert (null === 0);
-alert (' потому что null - это ничего, а 0 - это уже что-то');
+alert (' потому что null - это ничего, а 0 - это уже что-то')

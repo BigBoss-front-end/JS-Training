@@ -17,48 +17,42 @@ if (a > 0 & b > 0) {
     alert('a = '+a+' и b = '+b+', оба разных знаков. Их сумма = '+c)
 };
 
-// Тут начинается 4 задание (запрашивается значение переменной, и выводится с помощью свитч рандомное значение от y до 15)
+// Тут начинается 4 задание (запрашивается значение переменной, и выводится с помощью свитч от y до 15)
 
 y = +prompt("Введите число от 1 до 15");
 
-function getRandomInt(min, max) {
-    min = y;
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум не включается, минимум включается
-};
-
-switch(getRandomInt(y, 15)) {
-    case 0: alert(getRandomInt(y, 15));
+switch(y) {
+    case 0: alert('1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 1: alert(getRandomInt(y, 15));
+    case 1: alert('2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 2: alert(getRandomInt(y, 15));
+    case 2: alert('3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 3: alert(getRandomInt(y, 15));
+    case 3: alert('4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 4: alert(getRandomInt(y, 15));
+    case 4: alert('5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 5: alert(getRandomInt(y, 15));
+    case 5: alert('6, 7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 6: alert(getRandomInt(y, 15));
+    case 6: alert('7, 8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 7: alert(getRandomInt(y, 15));
+    case 7: alert('8, 9, 10, 11, 12, 13, 14, 15');
         break;
-    case 8: alert(getRandomInt(y, 15));
+    case 8: alert('9, 10, 11, 12, 13, 14, 15');
         break;
-    case 9: alert(getRandomInt(y, 15));
+    case 9: alert('10, 11, 12, 13, 14, 15');
         break;
-    case 10: alert(getRandomInt(y, 15));
+    case 10: alert('11, 12, 13, 14, 15');
         break;
-    case 11: alert(getRandomInt(y, 15));
+    case 11: alert('12, 13, 14, 15');
         break;
-    case 12: alert(getRandomInt(y, 15));
+    case 12: alert('13, 14, 15');
         break;
-    case 13: alert(getRandomInt(y, 15));
+    case 13: alert('14, 15');
         break;
-    case 14: alert(getRandomInt(y, 15));
+    case 14: alert('15');
         break;
-    case 15: alert(getRandomInt(y, 15));
+    case 15: alert('15');
         break;
     default: alert('Что-то пошло не так')
 }
@@ -101,13 +95,13 @@ function Chast(per1, per2) {
 }
 
 switch(mathOperation()) {
-    case 1: alert(Summ(arg1, arg2))
+    case 1: alert(arg1+' + '+arg2+' = '+Summ(arg1, arg2))
         break;
-    case 2: alert(Razn(arg1, arg2))
+    case 2: alert(arg1+' - '+arg2+' = '+Razn(arg1, arg2))
         break;
-    case 3: alert(Proizv(arg1, arg2))
+    case 3: alert(arg1+' * '+arg2+' = '+Proizv(arg1, arg2))
         break;
-    case 4: alert(Chast(arg1, arg2))
+    case 4: alert(arg1+' / '+arg2+' = '+Chast(arg1, arg2))
         break;
     default: alert('Что-то пошло не так')
 }  
